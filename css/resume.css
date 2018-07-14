@@ -150,8 +150,8 @@ a:hover, a:focus, a:active {
 .column {
   float: left;
   /*width: 33.33%;*/
-  padding: 2px;
-  margin-left: 10px;
+  padding: 0px;
+  margin-left: 12px;
 }
 
 /* Clear floats after image containers */
