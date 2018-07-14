@@ -158,6 +158,7 @@ a:hover, a:focus, a:active {
   content: "";
   clear: both;
   display: table;
+  margin-left: 20px;
 }
 
 .imgfaves {
