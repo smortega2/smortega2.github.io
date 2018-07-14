@@ -159,3 +159,7 @@ a:hover, a:focus, a:active {
   clear: both;
   display: table;
 }
+
+.imgfaves {
+  border-radius: 10%;
+}
