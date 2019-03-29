@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>THE CATEGORY GAME</title>  
+
+  <link href='http://fonts.googleapis.com/css?family=Sintony:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+
+  <style type="text/css">    
+  body
+  {
+    background-color:#000;
+    font-family: 'Actor';
+    font-size:22px;
+  }
+  h1
+  {
+    font-size:48px;
+    margin-top:0;
+    font-family:Arial, sans-serif;
+    text-shadow:2px 0 15px #292929;
+    letter-spacing:4px;
+    text-decoration:none;
+    color:#DDD;
+  }
+  #banner
+  {
+    width:500px;
+    height:200px;
+    text-align:center;
+    background-image:url(http://i.imgur.com/MQHYB.jpg);
+    background-repeat:no-repeat;
+    border-radius:5px;
+    margin:90px auto auto;
+    padding:80px 0;
+  }
+  .lead
+  {
+    background-color:rgba(255,255,255,0.6);
+    border-radius:3px;
+    box-shadow:rgba(0,0,0,0.2) 0 1px 3px;
+    font-family:Sintony, sans-serif;
+  }
+  .div_wrapper
+  {
+    width:100%;
+    text-align: center;
+  }
+
+  .ol_wrap
+  {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ol {
+/*    width:800px;
+*/    background: #6b4a82;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top:10px;
+  }
+
+  ol li {
+/*    background: #6b4a82;
+*/    padding: 5px;
+    margin-left: 35px;
+  }
+
+  #timer
+  {
+    font-family: 'Actor', monospace;
+    margin-top:-30px;
+    font-size:50px;
+  }
+
+  </style>
+
+</head>  
+ <body onload="startClock()"> 
+<!-- <body background = "/cloud.jpg"> -->
+  <div class="container-fluid p-0" align="center">
+    <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+      <div class="my-auto">
+        <h1 class="mb-0">THE CATEGORY GAME</h1>
+      </div>
+    </section>
+  </div>
+  <div class="div_wrapper" id="timer" style="color:white">
+    <span id="running_clock">3:00</span>
+  </div>
+  <div class="div_wrapper"><div style="color:white">LETTER: <span id="letter">{{ letter }}</span></div></div>
+  <div class="ol_wrap" style="color:white">
+    <ol>
+      {% for category in categories %}
+      <li>{{ category }}</li>
+      {% endfor %}
+    </ol>
+  </div>
+
+
+  <script>
+    var countdown_time = 1;
+    function startClock(){
+      var fiveMinutes = 60 * countdown_time, display = document.querySelector('#running_clock');
+      updateClock(fiveMinutes, display);
+    }
+    function updateClock(duration, display){
+      var timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        --timer;
+        if(timer < 30){
+          document.getElementById('running_clock').style.color = "#ed0b17";
+        }
+        if (timer < 0) {
+            timer = 0;
+            document.body.style.backgroundColor = "#503860";
+        }
+      }, 1000);
+    }
+  </script>
+  <!-- <script src="../clock.js"></script> -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
