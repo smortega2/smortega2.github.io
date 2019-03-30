@@ -71,8 +71,7 @@
 
 </head>  
   <body>
-<!-- <body background = "/cloud.jpg">
- -->  <div class="container-fluid p-0" align="center">
+    <div class="container-fluid p-0" align="center">
     <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
       <div class="my-auto">
         <h1 class="mb-0">THE CATEGORY GAME</h1>
@@ -80,23 +79,9 @@
     </section>
   </div>
   <div class="button_wrap">
-    <form action="/start" method="post">
-      <button class = "start_game_button" name="forwardBtn" type="submit">start game</button>
-    </form>
+      <button onclick="setup_game()" class = "start_game_button" >start game</button>
   </div>
-  <!-- <div style="color:white">TIME REMAINING: <span id="running_clock">3:00</span></div>
-  <div style="color:white">LETTER: <span id="letter">{{ letter }}</span></div>
-  <div style="color:white">CATEGORIES: <ul>
-      {% for category in categories %}
-      <li>{{ category }}</li>
-      {% endfor %}
-    </ul></div>
-	<div >
-    <form action="/start" method="post">
-      <button name="forwardBtn" type="submit">Click me</button>
-    </form>
-	</div> -->
-  <!-- <script src="../clock.js"></script> -->
+  <script src="gameplay_logic.js"></script>
 
 </body>
 </html>
