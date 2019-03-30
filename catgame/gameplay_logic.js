@@ -1,6 +1,6 @@
 function setup_game(){
 	var letter = generateLetter();
-	var categories = generate_categories();
+	var categories = generateCategories();
 	var url = buildUrl(letter,categories);
 	window.location = url;
 
@@ -29,7 +29,7 @@ function generateLetter(){
 	return letter;
 }
 
-function generate_categories(){
+function generateCategories(){
 	var categories = [	
 					"things_you_don't_want_in_the_house",
 					"colors",
@@ -148,8 +148,10 @@ function generate_categories(){
 					"furniture",
 					"presidents",
 					"product_names"
-					]
-	return categories;
+					];
+	var inds = chance.unique(chance.natural, 12, {min: 0, max: categories.length-1});
+	var category_slice = inds.map(i => categories[i]);
+	return category_slice;
 }
 
 function startGame(){
@@ -158,10 +160,11 @@ function startGame(){
 }
 
 function displayVariables(){
-	var letter = getUrlVars()["letter"];
+	var letter = generateLetter();//getUrlVars()["letter"];
 	document.getElementById('letter').innerHTML = letter;
+	categories = generateCategories();
 	for(var i=0; i < 12; i++){
-		var category = getUrlVars()["c"+i]
+		var category = categories[i];//getUrlVars()["c"+i]
 		category = formatCategory(category);
 		displayCategoryInList(category);
 	}
