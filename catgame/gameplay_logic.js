@@ -188,7 +188,7 @@ function getUrlVars() {
     return vars;
 }
 
-var countdown_time = 1;
+var countdown_time = 3;
 function startClock(){
 	var fiveMinutes = 60 * countdown_time, display = document.querySelector('#running_clock');
     updateClock(fiveMinutes, display);
