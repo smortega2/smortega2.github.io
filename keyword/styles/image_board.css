@@ -1,0 +1,125 @@
+body
+  {
+    background-color:#000;
+    font-family: 'Actor';
+    font-size:22px;
+  }
+  h1
+  {
+    font-size:15px;
+    margin-top:0;
+    font-family:Arial, sans-serif;
+    text-shadow:2px 0 15px #292929;
+    letter-spacing:4px;
+    text-decoration:none;
+    color:#DDD;
+  }
+
+  .div_wrapper
+  {
+    width:100%;
+    text-align: center;
+  }
+
+  .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  img{
+    width:130px;
+    height:130px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    /*position: sticky;
+    z-index: 0;*/
+  }
+  .img_wrapper { 
+    width: 130px;
+    height: 130px;
+    display: inline-block;
+    background: #c6b52d;
+    border-radius: 4px;
+  }
+
+  .vert_text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color:white;
+
+    position: absolute;
+    top: 160px;
+    left: 220px;
+  }
+
+  .key_wrap {
+    /*writing-mode: vertical-rl;
+    text-orientation: upright;*/
+    color:white;
+
+    position: absolute;
+    top: -18px;
+    left: 20px;
+  }
+  
+  #key_text{
+    color:#429bf4;
+    text-decoration: underline;
+  }
+
+
+  .hoverable_img:hover {
+    transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #737777;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 6px;
+  height:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0ccad1;
+}
+
+.modal_title {
+  font-size: 39px;
+}
+
+.centered{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
