@@ -27,7 +27,7 @@ function joinRouter(page){
 		} else if(blue_keys.includes(key_input)){ // check if that key is in the blue list
 			console.log('blue');
 			console.log(blue_keys.indexOf(key_input));
-			// window.location = page + "?turn=2" + "&keyword=" + key_input;
+			window.location = page + "?turn=2" + "&keyword=" + key_input;
 		} else { // if the key isn't in either list, tell user that key is incorrect
 			document.getElementById("warning").innerHTML = "that is an invalid game key";
 		}
