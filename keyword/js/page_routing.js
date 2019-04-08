@@ -23,7 +23,7 @@ function joinRouter(page){
 		if(red_keys.includes(key_input)){ // check if that key is in the red list
 			console.log('red');
 			console.log(red_keys.indexOf(key_input));
-			//window.location = page + "?turn=1" + "&keyword=" + key_input;
+			window.location = page + "?turn=1" + "&keyword=" + key_input;
 		} else if(blue_keys.includes(key_input)){ // check if that key is in the blue list
 			console.log('blue');
 			console.log(blue_keys.indexOf(key_input));
