@@ -128,7 +128,14 @@ function generateCategories(){
 					"things you mix up",
 					"furniture",
 					"presidents",
-					"product names"
+					"product names",
+					"movie characters",
+					"drinks",
+					"sports teams",
+					"cleaning supplies",
+					"recreational activities",
+					"female disney characters",
+					"airlines"
 					];
 	var inds = chance.unique(chance.natural, 12, {min: 0, max: categories.length-1});
 	var category_slice = inds.map(i => categories[i]);
