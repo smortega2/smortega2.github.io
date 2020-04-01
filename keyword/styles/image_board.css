@@ -53,13 +53,17 @@ h1 {
     left: 220px;
   }
 
-  .key_wrap {
-    color:white;
-
-    position: absolute;
-    top: -18px;
-    left: 15px;
-  }
+.game_info_wrap{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 15px;
+  display:block;
+  color:white;
+  border:1px solid white;
+  border-radius: 5px;
+  background-color:#010c1a;
+}
   
   .t_wrap {
     color:white;
