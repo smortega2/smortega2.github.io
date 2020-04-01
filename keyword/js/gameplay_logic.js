@@ -187,13 +187,7 @@ function displayImageBoard(){
 			var img_id = "im" + i + j;
 			var img_url_ind = img_board[i][j];
 
-			var img = new Image();
-			img.onload = function() {
-				
-			}
-			img.src = image_urls[img_url_ind];
-
-			document.getElementById(img_id).src=img.src;
+			document.getElementById(img_id).src=image_urls[img_url_ind];
 
 			// save color to be displayed later to prevent early showing of colors
 			if(game_board[i][j] == 2){ // blue tile
