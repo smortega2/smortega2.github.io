@@ -52,6 +52,16 @@ h1 {
     top: 160px;
     left: 220px;
   }
+  
+.key_wrap {
+  margin-top:0px;
+  margin-bottom:5px;
+}
+  
+.t_wrap {
+  margin-top:0px;
+  margin-bottom:0px;
+}
 
 .game_info_wrap{
   position: absolute;
@@ -64,14 +74,6 @@ h1 {
   border-radius: 5px;
   background-color:#010c1a;
 }
-  
-  .t_wrap {
-    color:white;
-
-    position: absolute;
-    top: 10px;
-    left: 15px;
-  }
 
   #key_text{
     color:#429bf4;
