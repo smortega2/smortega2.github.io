@@ -19,40 +19,30 @@ h1 {
   text-align: center;
 }
 
-  .row{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  img{
-    width:130px;
-    height:130px;
-    border-radius: 4px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    /*position: sticky;
-    z-index: 0;*/
-  }
-  .img_wrapper { 
-    width: 130px;
-    height: 130px;
-    display: inline-block;
-    background: #c6b52d;
-    border-radius: 4px;
-  }
+.row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .vert_text {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    color:white;
+img{
+  width:130px;
+  height:130px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+}
 
-    position: absolute;
-    top: 160px;
-    left: 220px;
-  }
-  
+.img_wrapper { 
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+  background: #c6b52d;
+  border-radius: 4px;
+}
+
 .key_wrap {
   margin-top:0px;
   margin-bottom:5px;
@@ -75,16 +65,32 @@ h1 {
   background-color:#010c1a;
 }
 
-  #key_text{
-    color:#429bf4;
-    text-decoration: underline;
-  }
+#key_text{
+  color:#429bf4;
+  text-decoration: underline;
+}
 
 
-  .hoverable_img:hover {
+.hoverable_img:hover {
   transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   z-index: 100;
   position:relative;
+}
+
+.red_card {
+  background-color: red;
+}
+
+.blue_card {
+  background-color: blue;
+}
+
+.yellow_card {
+  background-color: yellow;
+}
+
+.gray_card {
+  background-color: gray;
 }
 
   /* The Modal (background) */
@@ -106,10 +112,10 @@ h1 {
 .modal-content {
   background-color: #b06fa4;
   margin: auto;
-  padding: 20px;
+  padding: 60px 40px;
   width: 60%;
   border-radius: 6px;
-  height:60%;
+  /*height:350px;*/
   text-align: center;
   /*
   display: flex;
@@ -123,7 +129,7 @@ h1 {
 
 .modal_title {
   font-size: 39px;
-  margin-top:20%;
+  /*margin-top:20%;*/
 }
 
 .centered{
@@ -138,7 +144,7 @@ h1 {
 
 .play_again_btn{
   background-color: #429bf4;
-  color: #DDD;
+  color: white;
   border-radius: 4px;
   border:none;
   font-size: 17px;
@@ -153,10 +159,3 @@ h1 {
 .board_wrap{
 
 }
-
-
-
-
-
-
-
